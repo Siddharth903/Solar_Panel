@@ -1,0 +1,7 @@
+
+<!doctype html>
+<title>Result</title>
+<h1>Estimation Result</h1>
+<img src="{{ url_for('uploaded_file', filename=image) }}" style="max-width:500px;"><br>
+<pre>{{ output | tojson(indent=4) }}</pre>
+<a href="/">Go Back</a>
